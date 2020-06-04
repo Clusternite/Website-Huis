@@ -2,7 +2,7 @@
 
 $from = 'Demo contact form <demo@domain.com>';
 
-$sendTo = 'Demo contact form <demo@domain.com>';
+$sendTo = 'Demo contact form <jacquesgovaert77@gmail.com>';
 
 $subject = 'New message from contact form';
 
