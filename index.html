@@ -34,23 +34,27 @@
   </div>
 
   <div class="site-wrap">
+    <!-- ----------------------------- Mobile Nav ------------------------------- -->
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
           <span class="icon-close2 js-menu-toggle"></span>
         </div>
       </div>
-      <div class="site-mobile-menu-body"></div>
+      <div class="site-mobile-menu-body">
+      </div>
     </div>
-    <!-- ----------------------------- Nav ------------------------------- -->
 
+    
+    
+<!-- ----------------------------- Top Nav ------------------------------- -->
     <div class="site-navbar-wrap">
       <div class="site-navbar-top">
         <div class="container py-3">
           <div class="row align-items-center">
             <div class="col-6">
               <a href="#" class="p-2 pl-0"><span class="icon-twitter"></span></a>
-              <a href="#" class="p-2 pl-0"></a>
+              <a style="opacity:0;" href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
               <a href="#" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
               <a href="#" class="p-2 pl-0"><span class="icon-instagram"></span></a>
             </div>
@@ -69,7 +73,7 @@
           </div>
         </div>
       </div>
-
+<!-- ----------------------------- Computer Nav ------------------------------- -->
       <div class="site-navbar site-navbar-target js-sticky-header">
         <div class="container">
           <div class="row align-items-center">
@@ -80,8 +84,8 @@
               <nav class="site-navigation text-right" role="navigation">
                 <div class="container">
                   <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-                    <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span
-                        class="icon-menu h3"></span></a>
+                    <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                      <span class="icon-menu h3"></span></a>
                   </div>
 
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
@@ -94,7 +98,19 @@
                     <li>
                       <a href="#faq-section" class="nav-link">FAQ</a>
                     </li>
-                    <li><a href="#image-section" class="nav-link">Images</a></li>
+
+                    <li class="has-children"><span class="arrow-collapse collapsed" data-toggle="collapse"
+                        data-target="#collapseItem0"></span>
+                      <a href="#image-section" class="nav-link">Images</a>
+                      <ul  class="dropdown arrow-top">
+                        <li><a href="/primary.html#top-section" class="nav-link">Primary house</a></li>
+                        <li><a href="/rental.html" class="nav-link">Rental house</a></li>
+                        <li><a href="/storage.html" class="nav-link">Storage bulding</a></li>
+                        <li><a href="/barn.html" class="nav-link">Barn</a></li>
+                        <li><a href="/outside.html" class="nav-link">Outside</a></li>
+                        <li><a href="/index.html" class="nav-link">View All Images</a></li>
+                      </ul>
+                    </li>
 
                     <li>
                       <a href="#contact-section" class="nav-link">Contact</a>
@@ -118,7 +134,7 @@
               class="play-button d-block">
               <span class="icon-play"></span>
             </a>
-            <h1 class="text-uppercase">selling courtyard farm</h1>
+            <h1 class="text-uppercase">courtyard farm for sale</h1>
             <span class="sub-text mb-3 d-block"><em>location: Quesnoit 24, 7890 Ellezelles.</em></span>
           </div>
         </div>
