@@ -1,5 +1,5 @@
 const init = () => {
-    [...document.getElementsByClassName("linkListInList")].forEach((linkElem) => {
+    [...document.getElementsByClassName("childnavlink")].forEach((linkElem) => {
         linkElem.addEventListener("click", () => {
             window.location = `${linkElem.href}`
         });
