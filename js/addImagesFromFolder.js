@@ -1,13 +1,23 @@
 let src = document.getElementById("images");
-
+const pageNames = ["rental", "outside"];
+let len = 100;
 const starting = () => {
   let urlname = window.location.pathname.slice(0, -5);
   console.log(urlname)
-  let len = 100;
-  let arrayAY = [];
+  
+  if (urlname == "/allimages") {
+    pageNames.forEach(pageName => {
+      addImagesToPageFromURl(`/${pageName}`)
+    })
+  } else
+    addImagesToPageFromURl(urlname);
 
+
+}
+
+function addImagesToPageFromURl(urlname) {
   for (let i = 1; i <= len; i++) {
-
+    console.log()
     let img = new Image();
     img.src = `./images${urlname}${urlname} (${i}).jpg`;
     img.onload = () => {
@@ -28,8 +38,6 @@ const starting = () => {
       }
     }
   }
-
-
 }
 
 window.onload = starting();
