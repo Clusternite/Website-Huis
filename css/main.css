@@ -8,5 +8,9 @@ hr {
 }
 
 img {
-border-radius: 27.5px;
+  border-radius: 27.5px;
+}
+
+#roudingbutton {
+  border-radius: 27.5px;
 }
