@@ -9,8 +9,6 @@ const starting = () => {
     })
   } else
     addImagesToPageFromURl(urlname);
-
-
 }
 
 function addImagesToPageFromURl(urlname) {
