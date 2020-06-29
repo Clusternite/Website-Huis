@@ -208,8 +208,10 @@
     <div class="site-section history-section" id="history-section">
       <div class="container">
         <!-- <div class="row align-items-center mb-5 pb-5"> </div> -->
-        <div class="col-lg-7 img-years mb-5 mb-lg-0">
-          <img src="images/history.jpg" alt="Image" class="img-fluid" />
+        <div class="col-lg-7 img-years mb-5 mb-lg-0 mx-auto">
+          <a>
+            <img src="images/history.jpg" alt="Image" data-fancybox="images" data-caption="history" class="img-fluid" />
+          </a>
         </div>
         <div class="col-lg-4 ml-auto" style="display: inline;">
           <span class="sub-title">Learn To Know</span>
@@ -250,19 +252,20 @@
       </div>
     </div>
     <!-- ----------------------------- Current Form ------------------------------- -->
+    <hr />
     <div class="site-section current_form-section" id="current_form-section">
       <div class="container">
         <!-- <div class="row align-items-center mb-5 pb-5"> </div> -->
 
-        <div class="col-lg-7 img-years mb-5 mb-lg-0">
+        <div class="col-lg-7 img-years mb-5 mb-lg-0 mx-auto">
           <a href="images/current_form.jpg">
-            <img src="images/current_form.jpg" alt="Image" class="img-fluid" />
+            <img src="images/current_form.jpg" data-fancybox="images" data-width="500" alt="Image" class="img-fluid" />
           </a>
         </div>
 
         <div class="col-lg-4 ml-auto" style="display: inline;">
           <span class="sub-title">Learn To Know</span>
-          <h3 class="mb-4">Current form</h3>
+          <h3 class="mb-4 ">Current form</h3>
           <p class="mb-4">
             <h4> General </h4>
             The building part with inner square includes 14a15. The meadow with orchard covers 1.22 ha and the
@@ -382,14 +385,16 @@
       </div>
     </div>
     <!-- ----------------------------- Many possibilities ------------------------------- -->
-    <hr>
-    </hr>
+    <hr />
+
     <div class="site-section possibility-section" id="possibility-section">
       <div class="container">
         <!-- <div class="row align-items-center mb-5 pb-5"> </div> -->
 
-        <div class="col-lg-7 img-years mb-5 mb-lg-0">
-          <img src="images/possibilities.jpg" alt="Image" class="img-fluid" />
+        <div class="col-lg-7 img-years mb-5 mb-lg-0 mx-auto">
+          <a href="images/possibilities.jpg">
+          <img src="images/possibilities.jpg" alt="Image" data-fancybox="images" data-width="500" class="img-fluid" />
+          </a>
         </div>
 
         <div class="col-lg-4 ml-auto" style="display: inline;">
@@ -425,6 +430,7 @@
       </div>
     </div>
     <!-- ----------------------------- FAQ ------------------------------- -->
+    <hr />
     <div id="faq-section">
       <div class="site-section">
         <div class="container">
@@ -549,6 +555,7 @@
       </div>
     </div>
     <!-- ----------------------------- Images ------------------------------- -->
+    <hr />
     <div class="site-section" id="image-section">
       <div class="container">
         <div class="row">
@@ -614,6 +621,7 @@
     </div>
 
     <!-- ----------------------------- CONTACT ------------------------------- -->
+    <hr />
     <div class="site-section bg-light" id="contact-section">
       <div class="container">
         <div class="row justify-content-center">
@@ -633,74 +641,6 @@
           </div>
         </div>
 
-
-        <!--
-        <form id="contact-form" method="post" action="./php/contact.php" role="form">
-          <div class="messages"></div>
-          <div class="controls">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="form_name">Firstname *</label>
-                  <input id="form_name" type="text" name="name" class="form-control"
-                    placeholder="Please enter your firstname" required="required" data-error="Firstname is required.">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="form_lastname">Lastname *</label>
-                  <input id="form_lastname" type="text" name="surname" class="form-control"
-                    placeholder="Please enter your lastname" required="required" data-error="Lastname is required.">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="form_email">Email *</label>
-                  <input id="form_email" type="email" name="email" class="form-control"
-                    placeholder="Please enter your email" required="required" data-error="Valid email is required.">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="form_need">Please specify your need *</label>
-                  <select id="form_need" name="need" class="form-control" required="required"
-                    data-error="Please specify your need.">
-                    <option value="Request quotation">Question</option>
-                    <option value="Request order status">Information</option>
-                    <option value="Request copy of an invoice">Visit (appointment)</option>
-                    <option value="Other">Other</option>
-                  </select>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="form_message">Message *</label>
-                  <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here"
-                    rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <input type="submit" class="btn btn-success btn-send" value="Send message">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p class="text-muted">
-                  <strong>*</strong> These fields are required.
-              </div>
-            </div>
-          </div>
-        </form>
-        -->
       </div>
     </div>
   </div>
@@ -720,7 +660,6 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 
-  <script src="./js/contact.js"></script>
 
   <script src="js/nav.js"></script>
 

@@ -1,6 +1,6 @@
 let src = document.getElementById("images");
 const pageNames = ["primary", "rental", "multipurpose", "barn", "outside"];
-let len = 100;
+let len = 10;
 const starting = () => {
   let urlname = window.location.pathname.slice(0, -5);
   if (urlname == "/allimages") {
@@ -24,8 +24,9 @@ function addImagesToPageFromURl(urlname) {
         a.href = `./images${urlname}${urlname} (${i}).jpg`;
 
         a.setAttribute("class", "d-block figure");
-        a.setAttribute("data-fancybox", "images");
+        a.setAttribute("data-fancybox", "gallery");
         a.setAttribute("data-width", "500");
+        // a.setAttribute("data-thumb", `./images${urlname}${urlname} (${i}).jpg`)
         a.setAttribute("data-caption", `${urlname}`);
         a.appendChild(img);
 
