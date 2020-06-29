@@ -36004,19 +36004,19 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "sd_storage"
+          "sd_multipurpose"
         ],
         "defaultCode": 57794,
         "grid": 24
       },
       "attrs": [],
       "properties": {
-        "ligatures": "sd_card, sd_storage",
+        "ligatures": "sd_card, sd_multipurpose",
         "id": 654,
         "order": 665,
         "prevSize": 24,
         "code": 57794,
-        "name": "sd_storage"
+        "name": "sd_multipurpose"
       },
       "setIdx": 2,
       "setId": 2,
@@ -37840,19 +37840,19 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "storage"
+          "multipurpose"
         ],
         "defaultCode": 57819,
         "grid": 24
       },
       "attrs": [],
       "properties": {
-        "ligatures": "storage",
+        "ligatures": "multipurpose",
         "id": 722,
         "order": 733,
         "prevSize": 24,
         "code": 57819,
-        "name": "storage"
+        "name": "multipurpose"
       },
       "setIdx": 2,
       "setId": 2,
