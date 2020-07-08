@@ -1,6 +1,6 @@
 let src = document.getElementById("images");
 const pageNames = ["primary", "rental", "multipurpose", "barn", "outside"];
-let len = 10;
+let len = 85;
 const starting = () => {
   let urlname = window.location.pathname.slice(0, -5);
   if (urlname == "/allimages") {
