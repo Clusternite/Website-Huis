@@ -11,6 +11,15 @@ img {
   border-radius: 27.5px;
 }
 
-#roudingbutton {
+.roudingbutton {
   border-radius: 27.5px;
+}
+
+.rowP {
+  display: flex;
+}
+
+.columnP {
+  flex: 50%;
+  padding: 5px;
 }
