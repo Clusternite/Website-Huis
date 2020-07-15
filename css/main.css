@@ -23,3 +23,7 @@ img {
   flex: 50%;
   padding: 5px;
 }
+
+.homeBtnColor {
+  background-color: white;
+}
