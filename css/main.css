@@ -27,3 +27,11 @@ img {
 .homeBtnColor {
   background-color: white;
 }
+
+.btn.btn-primary:hover {
+  background-color: hsla(0, 0%, 100%, 0.7) !important;
+}
+
+.btn.btn-primary {
+  border-color: black !important;
+}

@@ -39,5 +39,20 @@ function addImagesToPageFromURl(urlname) {
     }
   }
 }
+//video.js
+document.getElementById("introBtn").addEventListener("click", () => {
+  document.getElementById("vidStart").click();
+})
+//nav.js
+const init = () => {
+  [...document.getElementsByClassName("childnavlink")].forEach((linkElem) => {
+    linkElem.addEventListener("click", () => {
+      window.location = `${linkElem.href}`
+    });
+  });
+}
 
-window.onload = starting();
+window.onload = ()=> {
+  init;
+  starting;
+}
