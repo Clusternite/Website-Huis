@@ -42,17 +42,8 @@ function addImagesToPageFromURl(urlname) {
 //video.js
 document.getElementById("introBtn").addEventListener("click", () => {
   document.getElementById("vidStart").click();
-})
-
-
-
-let vid = document.getElementById("vidStart");
-video.addEventListener('ended', function () {
-  let esc = $.Event("keydown", {
-    keyCode: 27
-  });
-  $("body").trigger(esc);
 });
+
 //nav.js
 const init = () => {
   [...document.getElementsByClassName("childnavlink")].forEach((linkElem) => {
