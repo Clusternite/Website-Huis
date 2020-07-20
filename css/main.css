@@ -1,3 +1,35 @@
+@media screen and (min-width: 0px) and (max-width: 467px) {
+  #backgroundText {
+    font-size: 30px !important;
+    text-align: center;
+  }
+
+  #backgroundSubText {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (min-width:468px) and (max-width: 767px) {
+  #backgroundText {
+    font-size: 42px !important;
+    text-align: center;
+  }
+
+  #backgroundSubText {
+    font-size: 25px !important;
+  }
+}
+
+@media screen and (min-width:768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .nav-link {
+    font-size: 15px !important;
+  }
+}
+
 hr {
   height: 10px;
   border: 0;
