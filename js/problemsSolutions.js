@@ -40,12 +40,33 @@
 //   }
 // }
 
+const languageDutch = () => {
+  document.getElementsByClassName("french")[0].setAttribute("style", "display: none;");
+  document.getElementsByClassName("dutch")[0].setAttribute("style", "display: contents;");
+  localStorage.setItem("vierkantshoeve_language", "dutch");
+  console.log("dutch", localStorage.getItem("vierkantshoeve_language"));
+}
+
+const languageFrench = () => {
+  document.getElementsByClassName("french")[0].setAttribute("style", "display: contents;");
+  document.getElementsByClassName("dutch")[0].setAttribute("style", "display: none;");
+  localStorage.setItem("vierkantshoeve_language", "french");
+  console.log("french", localStorage.getItem("vierkantshoeve_language"));
+  console.log(document.getElementById("dutchBtn"));
+
+}
+
+// dutch button when pressed
+document.getElementById("dutchBtn").addEventListener("click", languageDutch);
+
+// french button when pressed
+document.getElementById("frenchBtn").addEventListener("click", languageFrench);
 
 
 
 //video.js
-document.getElementById("introBtn").addEventListener("click", () => {
-  document.getElementById("vidStart").click();
+document.getElementsByClassName("introBtn").addEventListener("click", () => {
+  document.getElementsByClassName("vidStart").click();
 });
 
 //nav.js
@@ -67,9 +88,25 @@ const sourceAndLinkEqualizer = () => {
   }
 };
 
+const setLanguage = () => {
+  const language = localStorage.getItem("vierkantshoeve_language");
+  switch (language) {
+    case "dutch":
+      languageDutch();
+      break;
+    case "french":
+      languageFrench();
+      break;
+    default:
+      languageDutch();
+      break;
+  }
+}
+
 // LOAD
 window.onload = () => {
   init();
   // starting;
   sourceAndLinkEqualizer();
+  setLanguage();
 }
