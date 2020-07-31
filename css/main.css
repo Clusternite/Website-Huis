@@ -1,32 +1,14 @@
 @import "../fonts/edwardianScript/styles.css";
 
 
-
-@media screen and (min-width: 0px) and (max-width: 467px) {
-  .backgroundText {
-    font-size: 30px !important;
-    text-align: center;
-  }
-
-  .backgroundSubText {
-    font-size: 20px !important;
-  }
-}
-
-@media screen and (min-width:468px) and (max-width: 767px) {
-  .backgroundText {
-    font-size: 42px !important;
-    text-align: center;
-  }
-
-  .backgroundSubText {
-    font-size: 25px !important;
-  }
-}
-
 @media screen and (min-width:768px) {
-  body {
-    font-size: 18px;
+  .backgroundText {
+    font-size: 140px !important;
+    /* color: yellow !important; */
+  }
+
+  .backgroundSubText {
+    font-size: 60px !important;
   }
 
   .nav-link {
@@ -34,23 +16,46 @@
   }
 }
 
+@media screen and (min-width:468px) and (max-width: 767px) {
+  .backgroundText {
+    font-size: 80px !important;
+    /* color: red !important; */
+  }
+
+  .backgroundSubText {
+    font-size: 40px !important;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 467px) {
+  .backgroundText {
+    font-size: 60px !important;
+    /* color: cyan !important; */
+  }
+
+  .backgroundSubText {
+    font-size: 30px !important;
+  }
+}
+
 .backgroundText {
   font-family: "EdwardianScriptITC", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-transform: initial !important;
-  font-size: 140px !important;
+  text-transform: initial;
+  margin: 20px;
+  text-align: center
 }
 
 .backgroundSubText {
   font-family: "EdwardianScriptITC", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-transform: capitalize !important;
-  font-size: 50px !important;
-  
+  text-transform: capitalize;
+  text-align: center
 }
 
-#dutchBtn, #frenchBtn {
-background-color: transparent;
-border: transparent;
-color: white;
+#dutchBtn,
+#frenchBtn {
+  background-color: transparent;
+  border: transparent;
+  color: white;
 }
 
 hr {

@@ -40,20 +40,31 @@
 //   }
 // }
 
+const displayElementsInMenu = (displayFrench, displayDutch) => {
+  const arrayFrench = document.getElementsByClassName("nav-frech")
+  const arrayDutch = document.getElementsByClassName("nav-dutch")
+  for (let i = 0; i < arrayFrench.length; i++) {
+    let elemDutch = arrayDutch[i];
+    elemDutch.style.display = displayDutch;
+    let elemFrench = arrayFrench[i];
+    elemFrench.style.display = displayFrench;
+  }
+}
+
 const languageDutch = () => {
   document.getElementsByClassName("french")[0].setAttribute("style", "display: none;");
   document.getElementsByClassName("dutch")[0].setAttribute("style", "display: contents;");
   localStorage.setItem("vierkantshoeve_language", "dutch");
-  console.log("dutch", localStorage.getItem("vierkantshoeve_language"));
+
+  displayElementsInMenu("none", "");
 }
 
 const languageFrench = () => {
   document.getElementsByClassName("french")[0].setAttribute("style", "display: contents;");
   document.getElementsByClassName("dutch")[0].setAttribute("style", "display: none;");
   localStorage.setItem("vierkantshoeve_language", "french");
-  console.log("french", localStorage.getItem("vierkantshoeve_language"));
-  console.log(document.getElementById("dutchBtn"));
 
+  displayElementsInMenu("", "none");
 }
 
 // dutch button when pressed
@@ -65,8 +76,8 @@ document.getElementById("frenchBtn").addEventListener("click", languageFrench);
 
 
 //video.js
-document.getElementsByClassName("introBtn").addEventListener("click", () => {
-  document.getElementsByClassName("vidStart").click();
+document.getElementsByClassName("introBtn")[0].addEventListener("click", () => {
+  document.getElementsByClassName("vidStart")[0].click();
 });
 
 //nav.js
