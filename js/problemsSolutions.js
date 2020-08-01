@@ -1,5 +1,5 @@
 // -------------------------- Lazy loading images  --------------------------
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   let imgArray = document.getElementsByTagName('img');
   for (i = 0; i < imgArray.length; i++) {
     let imgTag = imgArray[i];
@@ -33,7 +33,7 @@
   document.addEventListener("scroll", lazyload);
   window.addEventListener("resize", lazyload);
   window.addEventListener("orientationChange", lazyload);
-});*/
+});
 
 // -------------------------- Change between languages --------------------------
 const displayElementsInMenu = (displayFrench, displayDutch) => {
@@ -83,12 +83,12 @@ const init = () => {
   });
 };
 
-// -------------------------- change everything from src to href --------------------------
+// -------------------------- copy everything from src to href --------------------------
 const sourceAndLinkEqualizer = () => {
   let imgArray = document.getElementsByTagName("img");
   for (i = 0; i < imgArray.length; i++) {
       let imgTag = imgArray[i];
-      let sourceAttribute = imgTag.getAttribute("src");
+      let sourceAttribute = imgTag.getAttribute("data-src");
       imgTag.setAttribute("href", sourceAttribute);
   }
 };
