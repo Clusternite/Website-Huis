@@ -1,5 +1,5 @@
 // -------------------------- Lazy loading images  -------------------------- 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   let imgArray = document.getElementsByTagName('img');
   for (i = 0; i < imgArray.length; i++) {
     let imgTag = imgArray[i];
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("scroll", lazyload);
   window.addEventListener("resize", lazyload);
   window.addEventListener("orientationChange", lazyload);
-});
+});*/
 
 
 // -------------------------- Change between languages -------------------------- 
