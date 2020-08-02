@@ -93,19 +93,20 @@ img {
   border: 0; */
 }
 
-a img  {
-  /* object-fit: cover !important; */
-  /* object-position: 50% 50%; */
-  /* position: absolute; */
-  /* top: 50%; left: 50%;
-  transform: translate(50%,-50%); */
-  /* margin-top: -25%; */
-  /*SEARCH FOR USE OF JS IN CSS and than say for this min-height of images do the following */
-}
+/*a img  {
+  object-fit: cover !important; 
+  object-position: 50% 50%; 
+  position: absolute; 
+  top: 50%; left: 50%;
+  transform: translate(50%,-50%); 
+  margin-top: -25%;
+  //SEARCH FOR USE OF JS IN CSS and than say for this min-height of images do the following 
+}*/
 
 a.d-block {
-   height: 150px !important;
-   width: 270px !important;
+   height: 200px !important;
+   width: 320px !important;
+   border-radius: 27.5px;
 }
 
 .roudingbutton {
@@ -119,6 +120,7 @@ a.d-block {
 .columnP {
   flex: 50%;
   padding: 5px;
+  max-width: 450px;
 }
 
 .homeBtnColor {
@@ -131,5 +133,9 @@ a.d-block {
 
 .btn.btn-primary {
   border-color: black !important;
+}
+
+.introImage {
+  max-width: 750px;
 }
 
