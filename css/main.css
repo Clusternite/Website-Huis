@@ -135,7 +135,7 @@ a.d-block {
   border-color: black !important;
 }
 
-.introImage {
+.introImage, .historyImage {
   max-width: 750px;
 }
 
