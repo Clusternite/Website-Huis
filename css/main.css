@@ -144,3 +144,11 @@ a.d-block {
   max-width: 750px;
 }
 
+
+#frenchBEFlag, #dutchBEFlag{
+  background: url("https://img.icons8.com/color/30/000000/belgium-circular.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+}
