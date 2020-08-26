@@ -83,6 +83,11 @@ hr {
   border-radius: 27.5px;
 }
 
+.textAroundImage {
+  margin-bottom: 1px !important;
+  margin-top: 40px;
+}
+
 img {
   border-radius: 27.5px;
   /* background: #F1F1FA;
