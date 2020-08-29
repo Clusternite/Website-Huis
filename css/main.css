@@ -135,6 +135,7 @@ a.d-block {
 .introImage,
 .historyImage {
   max-width: 750px;
+  margin-bottom: 2rem !important;
 }
 
 
