@@ -1,10 +1,10 @@
 // -------------------------- Lazy loading images  --------------------------
 document.addEventListener("DOMContentLoaded", function () {
-  let imgArray = document.getElementsByTagName('img');
+  let imgArray = document.getElementsByTagName("img");
   for (i = 0; i < imgArray.length; i++) {
     let imgTag = imgArray[i];
-    let attribute = imgTag.getAttribute('class');
-    imgTag.setAttribute('class', `${attribute} lazy`);
+    let attribute = imgTag.getAttribute("class");
+    imgTag.setAttribute("class", `${attribute} lazy`);
   }
   var lazyloadImages = document.querySelectorAll("img.lazy");
   var lazyloadThrottleTimeout;
@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
     lazyloadThrottleTimeout = setTimeout(function () {
       var scrollTop = window.pageYOffset;
       lazyloadImages.forEach(function (img) {
-        if (img.offsetTop < (window.innerHeight + scrollTop)) {
+        if (img.offsetTop < window.innerHeight + scrollTop) {
           img.src = img.dataset.src;
-          img.classList.remove('lazy');
+          img.classList.remove("lazy");
         }
       });
       if (lazyloadImages.length == 0) {
@@ -40,24 +40,32 @@ const displayElementsInMenu = (displayFrench, displayDutch) => {
   const arrayFrench = document.getElementsByClassName("nav-frech");
   const arrayDutch = document.getElementsByClassName("nav-dutch");
   for (let i = 0; i < arrayFrench.length; i++) {
-      let elemDutch = arrayDutch[i];
-      elemDutch.style.display = displayDutch;
-      let elemFrench = arrayFrench[i];
-      elemFrench.style.display = displayFrench;
+    let elemDutch = arrayDutch[i];
+    elemDutch.style.display = displayDutch;
+    let elemFrench = arrayFrench[i];
+    elemFrench.style.display = displayFrench;
   }
 };
 
 const languageDutch = () => {
-  document.getElementsByClassName("french")[0].setAttribute("style", "display: none;");
-  document.getElementsByClassName("dutch")[0].setAttribute("style", "display: contents;");
+  document
+    .getElementsByClassName("french")[0]
+    .setAttribute("style", "display: none;");
+  document
+    .getElementsByClassName("dutch")[0]
+    .setAttribute("style", "display: contents;");
   localStorage.setItem("vierkantshoeve_language", "dutch");
 
   displayElementsInMenu("none", "");
 };
 
 const languageFrench = () => {
-  document.getElementsByClassName("french")[0].setAttribute("style", "display: contents;");
-  document.getElementsByClassName("dutch")[0].setAttribute("style", "display: none;");
+  document
+    .getElementsByClassName("french")[0]
+    .setAttribute("style", "display: contents;");
+  document
+    .getElementsByClassName("dutch")[0]
+    .setAttribute("style", "display: none;");
   localStorage.setItem("vierkantshoeve_language", "french");
 
   displayElementsInMenu("", "none");
@@ -77,9 +85,9 @@ document.getElementsByClassName("introBtn")[0].addEventListener("click", () => {
 // -------------------------- nav.js --------------------------
 const init = () => {
   [...document.getElementsByClassName("childnavlink")].forEach((linkElem) => {
-      linkElem.addEventListener("click", () => {
-          window.location = `${linkElem.href}`;
-      });
+    linkElem.addEventListener("click", () => {
+      window.location = `${linkElem.href}`;
+    });
   });
 };
 
@@ -87,24 +95,24 @@ const init = () => {
 const sourceAndLinkEqualizer = () => {
   let imgArray = document.getElementsByTagName("img");
   for (i = 0; i < imgArray.length; i++) {
-      let imgTag = imgArray[i];
-      let sourceAttribute = imgTag.getAttribute("data-src");
-      imgTag.setAttribute("href", sourceAttribute);
+    let imgTag = imgArray[i];
+    let sourceAttribute = imgTag.getAttribute("data-src");
+    imgTag.setAttribute("href", sourceAttribute);
   }
 };
 // -------------------------- Local storage --------------------------
 const setLanguage = () => {
   const language = localStorage.getItem("vierkantshoeve_language");
   switch (language) {
-      case "dutch":
-          languageDutch();
-          break;
-      case "french":
-          languageFrench();
-          break;
-      default:
-          languageDutch();
-          break;
+    case "dutch":
+      languageDutch();
+      break;
+    case "french":
+      languageFrench();
+      break;
+    default:
+      languageDutch();
+      break;
   }
 };
 

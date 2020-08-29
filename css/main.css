@@ -39,16 +39,17 @@
 }
 
 @media screen and (max-height:799px) {
-.backgroundBoxes{
-display: none !important;
-}
+  .backgroundBoxes {
+    display: none !important;
+  }
 }
 
 @media screen and (min-height:800px) {
-.backgroundBoxes{
-  display: contents !important;
+  .backgroundBoxes {
+    display: contents !important;
+  }
 }
-}
+
 .backgroundBoxesText {
   color: black;
   font-weight: bold;
@@ -109,24 +110,15 @@ img {
 }*/
 
 a.d-block {
-   height: 200px !important;
-   width: 320px !important;
-   border-radius: 27.5px;
+  height: 200px !important;
+  width: 320px !important;
+  border-radius: 27.5px;
 }
 
 .roudingbutton {
   border-radius: 27.5px;
 }
 
-.rowP {
-  display: flex;
-}
-
-.columnP {
-  flex: 50%;
-  padding: 5px;
-  max-width: 450px;
-}
 
 .homeBtnColor {
   background-color: white;
@@ -140,15 +132,22 @@ a.d-block {
   border-color: black !important;
 }
 
-.introImage, .historyImage {
+.introImage,
+.historyImage {
   max-width: 750px;
 }
 
 
-#frenchBEFlag, #dutchBEFlag{
+#frenchBEFlag,
+#dutchBEFlag {
   background: url("https://img.icons8.com/color/30/000000/belgium-circular.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 30px;
   height: 30px;
+}
+
+.rowPictures {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
