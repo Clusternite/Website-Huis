@@ -68,6 +68,23 @@
   text-align: center
 }
 
+.ficheBtn {
+  background-color: #679436;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 5em;
+  border-radius: 27.5px;
+  width: 80%;
+}
+
+.ficheBtn a {
+  color: white;
+
+}
+
 #dutchBtn,
 #frenchBtn {
   background-color: transparent;
@@ -83,6 +100,8 @@ hr {
   width: 80%;
   border-radius: 27.5px;
 }
+
+
 
 .textAroundImage {
   margin-bottom: 1px !important;
