@@ -50,6 +50,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .backgroundBoxesText {
   color: black;
   font-weight: bold;
