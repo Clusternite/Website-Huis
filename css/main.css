@@ -175,3 +175,29 @@ a.d-block {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+/*Back To Top Button*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 100;
+  font-size: 18px;
+  border: none;
+  border-radius: 27.5px;
+  outline: none;
+  background-color: #679436;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 25px;
+  height: 80px;
+  width: 100px;
+
+}
+
+#myBtn:hover {
+  background-color: hsla(89, 47%, 40%, 0.7);
+}

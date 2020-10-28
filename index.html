@@ -30,56 +30,9 @@
   <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <!-- data-fancybox="gallery" data-width="1000" data-caption="" -->
   <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-  <!--
-  
-  <style>
-    #myBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 30px;
-      z-index: 100;
-      font-size: 18px;
-      border: none;
-      border-radius: 27.5px;
-      outline: none;
-      background-color: #679436;
-      color: white;
-      cursor: pointer;
-      padding: 20px;
-      font-size: 25px;
-      height: 80px;
-      width: 100px;
 
-    }
-
-    #myBtn:hover {
-      background-color: hsla(89, 47%, 40%, 0.7);
-    }
-  </style>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  <script>
-    var mybutton = document.getElementById("myBtn");
-    window.onscroll = function () {
-      scrollFunction()
-    };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script> 
-  
-
--->
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -3648,7 +3601,7 @@
       </div>
     </div>
   </div>
-  </div>
+
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -3667,6 +3620,29 @@
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
+
+
+  <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+
 </body>
 
 </html>
