@@ -63,6 +63,10 @@ const languageFrench = () => {
   document
     .getElementsByClassName("french")[0]
     .setAttribute("style", "display: contents;");
+
+  console.log(document.getElementsByClassName("french")[0]);
+  console.log(document.getElementsByClassName("dutch")[0]);
+
   document
     .getElementsByClassName("dutch")[0]
     .setAttribute("style", "display: none;");
