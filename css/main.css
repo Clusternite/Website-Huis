@@ -178,7 +178,7 @@ a.d-block {
 
 /*Back To Top Button*/
 
-#myBtn {
+#backToTopBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -198,6 +198,6 @@ a.d-block {
 
 }
 
-#myBtn:hover {
+#backToTopBtn:hover {
   background-color: hsla(89, 47%, 40%, 0.7);
 }

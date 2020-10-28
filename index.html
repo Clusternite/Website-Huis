@@ -31,7 +31,7 @@
   <!-- data-fancybox="gallery" data-width="1000" data-caption="" -->
   <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
 
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -3606,7 +3606,7 @@
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-  <script src="js/problemsSolutions.js"></script>
+  <script src="js/index.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
@@ -3622,25 +3622,7 @@
   <script src="js/main.js"></script>
 
 
-  <script>
-    var mybutton = document.getElementById("myBtn");
-    window.onscroll = function () {
-      scrollFunction()
-    };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
 
 
 </body>
