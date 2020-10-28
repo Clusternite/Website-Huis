@@ -4,7 +4,7 @@
 @media screen and (min-width:768px) {
   .backgroundText {
     font-size: 140px !important;
-    /* color: yellow !important; */
+    
   }
 
   .backgroundSubText {
@@ -19,7 +19,7 @@
 @media screen and (min-width:468px) and (max-width: 767px) {
   .backgroundText {
     font-size: 80px !important;
-    /* color: red !important; */
+    
   }
 
   .backgroundSubText {
@@ -30,7 +30,7 @@
 @media screen and (min-width: 0px) and (max-width: 467px) {
   .backgroundText {
     font-size: 60px !important;
-    /* color: cyan !important; */
+    
   }
 
   .backgroundSubText {
