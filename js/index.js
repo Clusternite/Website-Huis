@@ -118,7 +118,7 @@ const setLanguage = () => {
 };
 //  -------------------------- Back to Top button --------------------------
 
-var mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("backToTopBtn");
 window.onscroll = function () {
   scrollFunction()
 };
