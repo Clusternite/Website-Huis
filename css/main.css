@@ -202,3 +202,23 @@ a.d-block {
 #backToTopBtn:hover {
   background-color: hsla(89, 47%, 40%, 0.7);
 }
+
+.basisTable{
+  margin: 15px;
+  border-collapse: collapse;
+  border: 5px solid #679436;
+  border-radius: 27.5px;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.basisTable td, table.basisTable th {
+  border: 1px solid #585858;
+  padding: 3px 2px;
+}
+table.basisTable tr:nth-child(even) {
+  background: #67943631;
+}
+
+
+
