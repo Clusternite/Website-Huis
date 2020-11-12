@@ -79,9 +79,9 @@ document.getElementById("dutchBtn").addEventListener("click", languageDutch);
 document.getElementById("frenchBtn").addEventListener("click", languageFrench);
 
 // -------------------------- video.js --------------------------
-document.getElementsByClassName("introBtn")[0].addEventListener("click", () => {
-  document.getElementsByClassName("vidStart")[0].click();
-});
+// document.getElementsByClassName("introBtn")[0].addEventListener("click", () => {
+//   document.getElementsByClassName("vidStart")[0].click();
+// });
 
 // -------------------------- nav.js --------------------------
 const init = () => {
